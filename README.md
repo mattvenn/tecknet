@@ -1,5 +1,7 @@
 # Tecknet iep300 power bank
 
+## Introduction
+
 The [tecknet iep300](http://www.amazon.co.uk/Ultra-Compact-Lipstick-Sized-Flashlight-Lightning-Blackberry/dp/B001HG1ZFK) is based on a Li-Ion 18650 battery and stated to deliver 3000mAh. 
 
 The 18650 format seems to be highly susceptible to fraud. Some good examples are [documented here](http://www.torchythebatteryboy.com/p/18650-batteries-chargers.html). 
@@ -10,13 +12,26 @@ The printing on the battery is a Samsung icr18650-30a. However, it is easy to fa
 
 We also checked the charge profile, and the low voltage protection cut out voltage.
 
+## Conclusion
+
+The battery pack (for now) uses a high quality Li-Ion battery. It delivers at least 2500mAh which equates to 5 hours runtime for a Raspberry Pi model B.
+
+The low voltage drop out is perhaps slightly low at 2.5v, and our discharge test was ended at 3v. So you could get longer run times but possibly cause faster battery degradation in the longer term.
+
 ## Measurements
+
+#Raspberry Pi model b current test
+
+* Desolder battery from circuit,
+* Measure current drawn when powering Raspberry Pi model b (no peripherals).
+
+result = 500mA.
 
 #Battery discharge test
 
-* battery is out of circuit with charger
-* set low voltage to 3v, current to 0.5A
-* run time test.
+* Battery is out of circuit with charger,
+* Low voltage cut off set to 3v,
+* Current drawn set to 500mA.
 
 ![Discharge Graph](discharge.png)
 
@@ -24,21 +39,14 @@ We also checked the charge profile, and the low voltage protection cut out volta
 
 # Charge current
 
-* from flat (3v) 0.6A
-* dropping to 0.4A when batt is at 4v
-* 0.2A at 4.15v
+* from flat (3v) 0.6A,
+* dropping to 0.4A when batt is at 4v,
+* 0.2A at 4.15v,
+* takes 2 hours to fully charge.
 
 # Cutoff voltage
 
-Regulates to 5v (with load connected) down to 2.5v then cuts off.
-2.5v seems low for a Li-Ion.
-
-#Raspberry Pi model b current test
-
-* desolder battery from circuit
-* measure current drawn when powering model b (no peripherals)
-
-result = 0.5A
+Regulates to 5v (with load connected) down to 2.5v then cuts off. 
 
 # References
 
