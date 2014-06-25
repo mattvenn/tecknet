@@ -24,6 +24,8 @@ result = 0.5A
 * set low voltage to 3v, current to 0.5A
 * run time test.
 
+![Discharge Graph](discharge.png)
+
 # Charge current
 
 * from flat (3v) 0.6A
