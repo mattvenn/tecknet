@@ -1,12 +1,14 @@
-# Tecknet 3000mAh power bank
+# Tecknet iep300 power bank
 
-The tecknet is based on a Li-Ion 18650 battery. The 18650 format seems to be highly susceptible to fraud. Some good examples are [documented here](http://www.torchythebatteryboy.com/p/18650-batteries-chargers.html). 
+The [tecknet iep300](http://www.amazon.co.uk/Ultra-Compact-Lipstick-Sized-Flashlight-Lightning-Blackberry/dp/B001HG1ZFK) is based on a Li-Ion 18650 battery and stated to deliver 3000mAh. 
+
+The 18650 format seems to be highly susceptible to fraud. Some good examples are [documented here](http://www.torchythebatteryboy.com/p/18650-batteries-chargers.html). 
 
 We needed to be sure that the battery pack would work well to power a Raspberry Pi model B computer for at least 2 hours. As well as checking that the power pack worked for this time, we opened the case and checked the battery model. 
 
 The printing on the battery is a Samsung icr18650-30a. However, it is easy to fake a printed label, so we also did a battery discharge test.
 
-We checked the charge profile, and the low voltage protection cut out voltage.
+We also checked the charge profile, and the low voltage protection cut out voltage.
 
 ## Measurements
 
