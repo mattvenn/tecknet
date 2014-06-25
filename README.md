@@ -22,16 +22,16 @@ The battery pack (for now) uses a high quality Li-Ion battery. It delivers at le
 
 The low voltage drop out is perhaps slightly low at 2.5v, and our discharge test was ended at 3v. So you could get longer run times but possibly cause faster battery degradation in the longer term.
 
-## Measurements
+# Measurements
 
-#Raspberry Pi model b current test
+##Raspberry Pi model b current test
 
 * Desolder battery from circuit,
 * Measure current drawn when powering Raspberry Pi model b (no peripherals).
 
 result = 500mA.
 
-#Battery discharge test
+##Battery discharge test
 
 * Battery is out of circuit with charger,
 * Low voltage cut off set to 3v,
@@ -41,14 +41,14 @@ result = 500mA.
 
 [battery data csv](battery.csv)
 
-# Charge current
+## Charge current
 
 * from flat (3v) 0.6A,
 * dropping to 0.4A when batt is at 4v,
 * 0.2A at 4.15v,
 * takes 2 hours to fully charge.
 
-# Cutoff voltage
+## Cutoff voltage
 
 Regulates to 5v (with load connected) down to 2.5v then cuts off. 
 
