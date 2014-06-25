@@ -26,6 +26,8 @@ result = 0.5A
 
 ![Discharge Graph](discharge.png)
 
+[battery data csv](battery.csv)
+
 # Charge current
 
 * from flat (3v) 0.6A
